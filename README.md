@@ -1,6 +1,6 @@
 # stream-multipart
 [![NPM Stable Version][npm-stable-version-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][travis-master-image]][travis-url]
 [![Test Coverage][codecov-image]][codecov-url-master]
 [![Dependency Status][david-image]][david-url-master]
 [![Node.js Version][node-version-image]][node-version-url]
