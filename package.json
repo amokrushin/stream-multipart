@@ -1,0 +1,35 @@
+{
+  "name": "stream-multipart",
+  "version": "0.1.0",
+  "description": "Transform stream for parsing multipart/form-data",
+  "keywords": [
+    "form-data",
+    "forms",
+    "multipart",
+    "uploads"
+  ],
+  "license": "MIT",
+  "author": "Anton Mokrushin <anton@mokr.org> (http://mokr.org/)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test",
+    "codecov": "node test -c lcovonly && ./node_modules/.bin/codecov",
+    "git-reset": "git reset --hard HEAD && git clean -df && git pull"
+  },
+  "dependencies": {
+    "dicer": "0.2.5",
+    "iconv-lite": "^0.4.15"
+  },
+  "devDependencies": {
+    "am-node-tape-runner": "^1.1.1",
+    "async": "^2.1.4",
+    "form-data": "^2.1.2",
+    "tape": "^4.6.3"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
