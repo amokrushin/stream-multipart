@@ -1,6 +1,6 @@
 {
   "name": "stream-multipart",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Transform stream for parsing multipart/form-data",
   "keywords": [
     "form-data",
