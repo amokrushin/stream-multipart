@@ -27,7 +27,7 @@ test('constructor', (t) => {
 
 // let testId = 0;
 testData.forEach((data) => {
-    // if (++testId !== 19) return;
+    // if (++testId !== 1) return;
     // test.only(data.what, (t) => {
     test(data.what, (t) => {
         let finishes = 0;
