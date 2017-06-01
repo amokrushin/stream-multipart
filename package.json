@@ -16,7 +16,6 @@
   },
   "scripts": {
     "test": "node test",
-    "codecov": "node test -c lcovonly && ./node_modules/.bin/codecov",
     "git-reset": "git reset --hard HEAD && git clean -df && git pull"
   },
   "dependencies": {
@@ -27,7 +26,6 @@
     "am-node-tape-runner": "^1.2.0",
     "async": "^2.4.1",
     "chalk": "^1.1.3",
-    "codecov": "^1.0.1",
     "form-data": "^2.1.4",
     "tape": "^4.6.3"
   },
