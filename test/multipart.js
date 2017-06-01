@@ -4,7 +4,7 @@ const FormData = require('form-data');
 const fs = require('fs');
 const path = require('path');
 const StreamMultipart = require('..');
-const testData = require('./fixture/test-data');
+const testData = require('./fixtures/test-data');
 
 test('constructor', (t) => {
     t.throws(() => {
