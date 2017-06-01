@@ -3,5 +3,15 @@ os: linux
 cache: yarn
 node_js:
   - 6
-  - "stable"
-after_success: npm run codecov
+  - stable
+after_success:
+  - yarn add codecov
+  - "./node_modules/.bin/iamtest -c lcovonly && ./node_modules/.bin/codecov"
+deploy:
+  provider: npm
+  email: anton@mokr.org
+  api_key:
+    secure: 0aMhaW8Zu3aP26FflBWtezjXYM1me0YbnfJA04zgbjItWC+w8GYFeujjUb+0dUJS6tgQWrF4RpWEWtR1y3Vuz9lmp+kYvZq3inxhM+0jHM+W+bo54a8KM0EBkppI1xG2RxU623aKlGGyAqo/kqPt3CPr+4cJD7DwSe/OycHUomKkNF4VfBJ7dcgQNI3X9wie7jddI4mgdrqMGodwUO6N3HmJrZnC/7OgHiNDGHY5MqIOl4VPEo/Hq8EtiHfPgoGNL4hI2N19VuzbMzESZ+s8etiDa936ht7hmC/uo+LPVhv5UzwhlpFV+cIQCiUALK1vItclMD5dWjfGwiFVHxYwwkTDzakpkzaXr7uXoQyL0XUfsNas13Q4IeB0hbGM8NX/ghfrtJ4W7HPtHw2/9etEE57Bq7kKEDg2w4w5zX3kFM+jqQjzMbwLcGs3rSaE+6gkHWbUqWvVrHWl4mRJlUG9vgz7TmzCjeTvEI2aUv+dvTPq6lTnYGuQTH4djqf+c5E/qyHcMiUB1aDlRzDan8ougjCkpSm7+4yPYJaikT5w/GwXHwpQnosOQ6ngTxOuAgfwGs/1G159w3MA1ls4ZeePWY7rMO/nhE4e6vekBZOypS4jEv6MVCFnzxZfuSEw6FtSyPeIJhI2GFR1uAHsu1s1fPLwX9NhO3PN3SdmilMf0Po=
+  on:
+    tags: true
+    repo: amokrushin/stream-multipart
